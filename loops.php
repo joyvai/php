@@ -44,23 +44,12 @@
 		echo "<br>";
 	}
 
+	$colors = array('red','blue','green','white','yellow');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	foreach ($colors as $color) {
+		# code...
+		echo "Do you like $color?\n";
+		echo "<br>";
+	}
 
 ?>
