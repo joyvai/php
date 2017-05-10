@@ -39,8 +39,17 @@ $Cars = array(
 	array('Ford',2000,1990)
 );
 
-echo $Cars[0][2];
+echo $Cars[0][2]."<br>";
 
+$color = array(
+	'color' => 'red',
+	'taste' => 'sweet',
+	'shape' => 'rectangle',
+	'magazine' => 'vague',
+	'a' => 'gun'
+);
+
+var_dump($color);
 
 
 
