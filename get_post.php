@@ -5,7 +5,8 @@
 		# code...
 		//name variable declared here
 		$name = htmlentities ($_GET['name']);
-	}	
+	}
+
 
 	// if (isset($_POST['name'])) {
 	// 	# code...
@@ -29,6 +30,10 @@
 		<label>Email</label>
 		<input type="text" name="email">
 	</div>
+	<div>
+		<label>Password</label>
+		<input type="password" name="password">
+	</div>
 	<input type="submit" name="submit">
 </form>
 	<ul>
@@ -41,5 +46,6 @@
 	</ul>
 	<!-- name variable print here. -->
 	<h1> <?php echo "{$name} profile";?> </h1>
+
 </body>
 </html>
