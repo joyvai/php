@@ -6,13 +6,14 @@ if(isset($_POST['submit'])) {
 
 	include 'dbh.inc.php';
 
+
 	$uid = mysqli_real_escape_string($conn,$_POST['uid']);
 	$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
 
 	// Error handlers
 	// check if inputs are empty
 	if (empty($uid) || empty($pwd)){
-		echo "your username or password is empty";
+		echo "<script language='javascript' type='text/javascript'> alert('username or password is invalid')</script>";
 		// header("Location: ../index.php?login=empty");
 		exit();
 	}
